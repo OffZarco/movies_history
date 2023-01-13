@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    position: absolute;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #910b0b;
+}
+
+nav .content {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+}
+
+nav a span {
+    margin-left: 10px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+nav a i {
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.form-control {
+    display: flex;
+    
+}
+
+.container h1 {
+    font-size: 4em;
+    margin: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#data-output tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    list-style-type: circle;
+}
+
+li.actors {
+    width: 50%;
+}
+
+
+/*Menu deroulant*/
+
+.drop {
+    list-style: none;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.drop ul li {
+    list-style: none;
+}
+
+.drop ul li a {
+    color: aliceblue;
+}
+
