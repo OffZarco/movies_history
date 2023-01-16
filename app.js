@@ -1,22 +1,26 @@
-fetch("movies.json")
-    .then(res => res.json())
-    .then(films => {
-        let placeholder = document.querySelector("#data-output");
-        let out = "";
-        for (let film of films) {
-            out += `
+window.onload = sortItems()
+
+function sortItems() {
+    fetch("movies.json")
+        .then(res => res.json())
+        .then(films => {
+            let placeholder = document.querySelector("#data-output");
+            let out = "";
+            for (let film of films) {
+                out += `
             <td class="td-list"> 
-            <img class="image" src='${film.img_url}'> 
-            <li class="list">${film.title}</li> 
+            <img class="image" src='${film.img_url}'>
+            <li class="list film_title">${film.title}</li> 
             <li class="list">${'Réalisateur : ' + film.real}</li> 
-            <li class="list">${'Durée :' + film.time}</li> 
+            <li class="list">${'Durée : ' + film.time}</li> 
             <li class="list">${'Année de production : ' + film.year}</li> 
-            <li class="list">${'Acteurs : ' + film.actor}</li> 
+            <li class="list actor">${'Acteurs : ' + film.actor}</li> 
             </td>
             `
-        }
-        placeholder.innerHTML = out;
-    });
+            }
+            placeholder.innerHTML = out;
+        });
+}
 
 function searchPage() {
     let input = document.getElementById('search').value
@@ -32,13 +36,3 @@ function searchPage() {
         }
     }
 }
-
-
-let submitButton = document.querySelector('.button');
-let input = document.querySelector('.form');
-
-submitButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    let inputValue = input.value;
-    console.log(inputValue);
-});

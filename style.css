@@ -5,6 +5,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+    background: url(./src/stars-964022.png);
+    backdrop-filter: blur(0.8px);
+    color: aliceblue;
+}
+
 .logo {
     position: absolute;
     color: aliceblue;
@@ -72,29 +78,29 @@ table {
     justify-content: center;
 }
 
+td {
+    width: 300px;
+    height: auto;
+    margin: 50px;
+    transition: .2s;
+}
+
+td:hover {
+    transition: .2s;
+    transform: scale(1.05);
+}
+
 li {
-    list-style-type: circle;
-}
-
-li.actors {
-    width: 50%;
-}
-
-
-/*Menu deroulant*/
-
-.drop {
-    list-style: none;
-    padding: 10px;
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.drop ul li {
+    background-color: #910b0b;
+    padding: 5px 15px;
     list-style: none;
 }
 
-.drop ul li a {
-    color: aliceblue;
-}
+.film_title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    list-style: none;
+    line-height: 50px;
 
+}

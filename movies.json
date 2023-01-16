@@ -15,7 +15,7 @@
     {
         "id": "2",
         "img_url": "https://images-ext-1.discordapp.net/external/ROsXZ9dLigCa-LgcHLOd4Yp1zMrQRB3nmef_Mwnb_f0/https/i.imgur.com/RBm8neo.jpg?width=366&height=458",
-        "title": "Black Panther : Wakanda Forever",
+        "title": "Black Panther",
         "real": "Ryan Coogler",
         "time": "2h42",
         "year": 2022,
@@ -41,7 +41,7 @@
     {
         "id": "4",
         "img_url": "https://media.discordapp.net/attachments/1062743019658420265/1063040408214589500/Top_gun.jpg?width=305&height=458",
-        "title": "Top Gun: Maverick ",
+        "title": "Top Gun",
         "real": "Joseph Kosinski",
         "time": "2h11min",
         "year": 2022,
@@ -54,7 +54,7 @@
     {
         "id": "5",
         "img_url": "https://media.discordapp.net/attachments/1062743019658420265/1063114499034464276/Avatar.jpg?width=305&height=458",
-        "title": "Avatar: La voie de l'eau",
+        "title": "Avatar 2",
         "real": "James Cameron",
         "time": "3h12",
         "year": 2022,
@@ -67,7 +67,7 @@
     {
         "id": "6",
         "img_url": "https://media.discordapp.net/attachments/1062743019658420265/1063040367563390976/jurassic_world.jpg?width=366&height=458",
-        "title": "Jurassic World: Dominion",
+        "title": "Jurassic World",
         "real": "Colin Trevorrow",
         "time": "2h00",
         "year": 2022,
@@ -120,7 +120,7 @@
     {
         "id": "10",
         "img_url": "https://cdn.discordapp.com/attachments/1062743019658420265/1063041566740070471/Spider_Man_NWH.jpg",
-        "title": "Spider-Man : No Way Home",
+        "title": "Spider-Man",
         "real": "Jon Watts",
         "time": "2h28",
         "year": 2022,
