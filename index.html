@@ -7,30 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies list</title>
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <a href="" class="logo"><i class="fa-sharp fa-solid fa-film"></i><span>Ciné Simplon</span></a>
-    <nav>
-        <div class="content">
-            <div class="container-nav">
-                <form class="searchbar" role="search">
-                    <input class="form" type="search" placeholder="Rechercher un film" id="search" value=""
-                        onKeyUp="searchPage()">
-                </form>
+
+    <header id="menu">
+        <nav>
+            <img class="logo" src="./src/cinema_logo.png" alt="">
+
+            <div class="form_input">
+                <input class="form" type="search" placeholder="Rechercher un film" id="search" value=""
+                    onKeyUp="searchPage()">
             </div>
-        </div>
-    </nav>
 
-    <div class="container">
+            <button id="btnSort" class="btnSortStyle" onclick="sortItems()">A - Z</button>
+        </nav>
+    </header>
+
+    <main class="container">
         <h1>Meilleures sorties</h1>
-
         <table id="table">
             <tbody class="tBody" id="data-output">
 
             </tbody>
         </table>
-    </div>
+    </main>
 
     <script src="./app.js"></script>
 </body>

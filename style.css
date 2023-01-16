@@ -5,71 +5,80 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
-    background: url(./src/stars-964022.png);
-    backdrop-filter: blur(0.8px);
-    color: aliceblue;
+/*navbar*/
+
+header {
+    width: 100%;
+    background-color: #660d0d;
 }
 
-.logo {
-    position: absolute;
-    color: aliceblue;
-    text-decoration: none;
-    font-size: .8em;
+#menu {
+    overflow: hidden;
+    top: 0;
+    position: fixed;
 }
 
 nav {
+    max-width: 90%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+}
+
+img.logo {
+    width: 6%;
+    color: aliceblue;
+}
+
+.form_input {
+    display: flex;
+    width: 100%;
     justify-content: center;
-    background-color: #910b0b;
 }
 
-nav .content {
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    display: flex;
-    align-items: center;
-}
-
-nav a span {
-    margin-left: 10px;
-    color: aliceblue;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.8em;
-}
-
-nav a i {
-    font-size: 25px;
-    color: aliceblue;
+.form_input input {
+    width: 500px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
 }
 
 .form-control {
     display: flex;
-    
+
+}
+
+.btnSortStyle {
+    width: 100px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #131313;
+    color: aliceblue;
+}
+
+.container {
+    background: url(./src/space.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
 }
 
 .container h1 {
     font-size: 4em;
-    margin: 50px;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
 }
 
-img {
+img.image {
     width: 300px;
     height: 450px;
     object-fit: cover;
-}
-
-table {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
 }
 
 #data-output tr {
@@ -78,29 +87,8 @@ table {
     justify-content: center;
 }
 
-td {
+li {
     width: 300px;
     height: auto;
-    margin: 50px;
-    transition: .2s;
-}
-
-td:hover {
-    transition: .2s;
-    transform: scale(1.05);
-}
-
-li {
-    background-color: #910b0b;
-    padding: 5px 15px;
     list-style: none;
-}
-
-.film_title {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    list-style: none;
-    line-height: 50px;
-
 }
