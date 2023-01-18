@@ -5,7 +5,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/*navbar*/
+body {
+    background: url(./src/stars-964022.png);
+    backdrop-filter: blur(0.8px);
+    color: aliceblue;
+}
 
 header {
     width: 100%;
@@ -15,7 +19,8 @@ header {
 #menu {
     overflow: hidden;
     top: 0;
-    position: fixed;
+    z-index: 1;
+    position: sticky;
 }
 
 nav {
@@ -24,7 +29,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 5px;
+    padding: 15px;
 }
 
 img.logo {
@@ -61,24 +66,24 @@ img.logo {
     color: aliceblue;
 }
 
-.container {
-    background: url(./src/space.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue;
-}
-
 .container h1 {
     font-size: 4em;
+    margin: 50px;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
 }
 
-img.image {
+.tBody img {
     width: 300px;
     height: 450px;
     object-fit: cover;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 #data-output tr {
@@ -87,8 +92,61 @@ img.image {
     justify-content: center;
 }
 
-li {
+td {
     width: 300px;
     height: auto;
+    margin: 50px;
+    transition: .2s;
+}
+
+td:hover {
+    transition: .2s;
+    transform: scale(1.05);
+}
+
+li {
+    background-color: #660d0d;
+    padding: 6px 15px;
     list-style: none;
+}
+
+.film_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 550;
+    list-style: none;
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+    img.logo {
+        width: 8%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    img.logo {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container h1 {
+        font-size: 2em;
+    }
+    img.logo {
+        width: 12%;
+    }
+    .form_input input {
+        transition: .2s;
+        width: 250px;
+    }
 }

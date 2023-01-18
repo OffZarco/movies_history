@@ -1,12 +1,15 @@
 let sortOrder = 1;
-window.onload = sortItems();
+window.onload = function () {
+    sortItems();
+}
 
 var btnSort = document.getElementById("btnSort");
 var values = ["A > Z", "Z > A"];
 var currentValue = 1;
+let page = 1;
 
 function sortItems() {
-    fetch("movies.json")
+    fetch("movies.json?page=" + page)
         .then(res => res.json())
         .then(films => {
             films.sort((a, b) => (a.title > b.title) ? sortOrder : -sortOrder);
@@ -17,7 +20,7 @@ function sortItems() {
                 out += `
             <td class="td-list"> 
             <img class="image" src='${film.img_url}'> 
-            <li class="list">${film.title}</li> 
+            <li class="list film_title">${film.title}</li> 
             <li class="list">${'Réalisateur : ' + film.real}</li> 
             <li class="list">${'Durée :' + film.time}</li> 
             <li class="list">${'Année de production : ' + film.year}</li> 
@@ -25,12 +28,18 @@ function sortItems() {
             </td>
             `
             }
-            placeholder.innerHTML = out;
+            placeholder.innerHTML += out;
+            page++;
         });
     currentValue = (currentValue + 1) % values.length;
     btnSort.innerHTML = values[currentValue];
 }
 
+window.addEventListener("scroll", function() {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        sortItems();
+    }
+});
 
 function searchPage() {
     let input = document.getElementById('search').value
